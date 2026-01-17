@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+:root {
+    --bodyBackground-Color: #151316;
+    --navBackground-Color: #222;
+    --white-Color: #FFF;
+}
+
+body {
+    background-color: var(--bodyBackground-Color);
+}
+
+/* start nav style  */
+.navbar {
+    padding: 0px 200px;
+    opacity: 0.7;
+    background: var(--navBackground-Color) !important;
+    box-shadow: 0 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
+    height: 82.182px;
+
+}
+
+/* img in nav  */
+.navbar .navbar-brand img {
+    width: 80px;
+    height: 80px;
+}
+
+/* ul in nav  */
+.navbar .navbar-nav {
+    margin-left: 300px;
+    gap: 71px;
+
+}
+
+/* li in ul  */
+
+
+/* a in li */
+.navbar .navbar-nav .nav-item a {
+    color: var(--white-Color);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    transition: all 1s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color: red;
+}
+
+/* start hero section (first section) */
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+
+
+/* hero img  */
+.hero figure img {
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+
+
+
+}
+
+.hero h1 {
+    color: var(--Primary-Color, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 63.357px;
+    /* 115.195% */
+}
+
+/* span in h1  */
+.hero h1 span {
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 63.357px;
+}
+
+.hero .about {
+    color: var(--Primary-Color, #FFF);
+    color: var(--Secondary-Text, #C5C5C5);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    width: 50%;
+    text-align: left;
+    padding-left: 100px;
+
+}
+
+/* buttons style */
+.hero .click {
+    display: flex;
+    column-gap: 30px;
+
+}
+
+
+.hero .click .first,
+.hero .click .second {
+    margin-top: 30px;
+    width: 195px;
+    height: 54px;
+    border-radius: 50px;
+
+
+}
+
+.hero .click .first {
+    color: black;
+    border-radius: 50px;
+    border: 1px solid var(--Primary-Color, #FFF);
+    background: linear-gradient(0deg, var(--Primary-Color, #FFF) 0%, var(--Primary-Color, #FFF) 100%), var(--Primary-Color, #FFF);
+    color: #161513;
+    -webkit-text-stroke-width: 0.32px;
+    -webkit-text-stroke-color: var(--Primary-Color, #FFF);
+    font-family: Poppins;
+    font-size: 21.38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero .click .second {
+
+    border: 2px solid var(--Primary-Color, #FFF);
+    background: var(--Background-Color, #161513);
+    color: var(--Primary-Color, #FFF);
+    -webkit-text-stroke-width: 0.32px;
+    -webkit-text-stroke-color: #000;
+    font-family: Poppins;
+    font-size: 21.38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero .click button {
+    transition: all 1s ease-in-out;
+}
+
+.hero .click button:hover {
+    color: #8f2fff;
+}
+
+/* end hero section */
+/* start .EXPERIENCE-WITh section */
+main .EXPERIENCE-WITh {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+
+main .EXPERIENCE-WITh span {
+    color: var(--Secondary-Text, #C5C5C5);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    margin-bottom: 20px;
+}
+
+main .EXPERIENCE-WITh .logos {
+    display: inline-flex;
+    height: 60px;
+    align-items: center;
+    gap: 70px;
+
+    justify-content: center;
+}
+
+
+
+/* end .EXPERIENCE-WITh section */
+
+/* start projects section */
+
+main #projects {
+    display: flex;
+    text-align: center;
+}
+
+main #projects h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px;
+    /* 102.137% */
+    text-transform: uppercase;
+    background: var(--Orange-Gradient, linear-gradient(180deg, #FF8660 0%, #D5491D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+}
+
+main #projects .project-1 {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+main #projects .project-1 .card-body {
+    background-color: #75b798;
+}
+
+/* end projects section */
+/* start .Experience section */
+main #Experience {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main #Experience h2 {
+
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px;
+    /* 102.137% */
+    text-transform: uppercase;
+    background: var(--Blue-Gradient, linear-gradient(180deg, #5BADFF 0%, #1373D1 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    text-align: center;
+}
+
+main #Experience h3 {
+    color: var(--Primary-Color, #FFF);
+
+    font-family: Poppins;
+    font-size: 21.74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 0px;
+    padding: 0px;
+
+    text-align: left;
+    text-indent: 400px;
+}
+
+
+
+
+
+main #Experience ul {
+    text-align: center;
+    list-style: none;
+    width: 40%;
+    margin: 0 auto;
+}
+
+main #Experience ul li {
+    color: var(--Light-Grey, #8491A0);
+    font-family: Poppins;
+    font-size: 14.494px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 21.74px */
+    text-align: left;
+
+    padding-left: 20px;
+}
+
+
+
+/* end #Experience section */
+
+/* start skills section */
+main #skills {
+
+    text-align: center;
+    margin: 30px 0px;
+}
+
+main #skills h2 {
+    color: #EB6840;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px;
+}
+
+main #skills ul {
+    width: 40%;
+    margin: 0px auto;
+    list-style: none;
+    color: #84818A;
+}
+
+main #skills ul li {
+    text-align: left;
+
+}
+
+/* end skills section */
+/* start contact footer */
+#contact {
+
+
+    background-color: var(--navBackground-Color);
+}
+
+
+
+
+#contact h2 {
+    color: #3F96ED;
+    font-family: Poppins;
+    font-size: 30.526px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.471px;
+    text-transform: uppercase;
+
+}
+
+#contact p {
+    color: var(--Secondary-Text, #C5C5C5);
+    font-family: Poppins;
+    font-size: 17.115px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0.282px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: start;
+    padding-left: 90px;
+}
+
+#contact .mail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+
+#contact .mail p {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#contact .mail .fa-regular {
+    color: white;
+    font-size: 20px;
+    margin: 0 12px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#contact .icons ul li a {
+    color: white;
+    font-size: 20px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+#contact .icons ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin: 10px auto;
+    row-gap: 10px;
+    padding-left: 75px;
+}
+
+
+/* end contact section */
