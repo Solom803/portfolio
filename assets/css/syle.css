@@ -9,6 +9,7 @@
     --bodyBackground-Color: #151316;
     --navBackground-Color: #222;
     --white-Color: #FFF;
+    --headingMargin: 50px 0px;
 }
 
 body {
@@ -26,9 +27,12 @@ body {
 }
 
 /* img in nav  */
-.navbar .navbar-brand img {
-    width: 80px;
-    height: 80px;
+.navbar h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF8660;
+    /* gold-like */
+    margin: 0;
 }
 
 /* ul in nav  */
@@ -46,9 +50,9 @@ body {
     color: var(--white-Color);
     text-align: center;
     font-family: "Plus Jakarta Sans";
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     line-height: normal;
     letter-spacing: 0.3px;
     transition: all 1s ease-in-out;
@@ -60,9 +64,7 @@ body {
 
 /* start hero section (first section) */
 .hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
     margin-top: 100px;
 }
 
@@ -70,11 +72,14 @@ body {
 
 
 /* hero img  */
-.hero figure img {
-    width: 213px;
-    height: 213px;
-    border-radius: 50%;
+.hero figure {
+    margin-top: 50px;
+}
 
+.hero figure img {
+    width: 413px;
+    height: 413px;
+    border-radius: 50%;
 
 
 }
@@ -83,10 +88,12 @@ body {
     color: var(--Primary-Color, #FFF);
     text-align: center;
     font-family: Poppins;
-    font-size: 55px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 800;
-    line-height: 63.357px;
+    line-height: 80.357px;
+
+
     /* 115.195% */
 }
 
@@ -97,32 +104,29 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Poppins;
-    font-size: 55px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 800;
     line-height: 63.357px;
 }
 
 .hero .about {
-    color: var(--Primary-Color, #FFF);
     color: var(--Secondary-Text, #C5C5C5);
-    text-align: center;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 50px;
     letter-spacing: 0.36px;
-    width: 50%;
-    text-align: left;
-    padding-left: 100px;
-
+    padding-left: 40px;
+    margin-top: 20px;
 }
 
 /* buttons style */
 .hero .click {
     display: flex;
     column-gap: 30px;
+    justify-content: center;
 
 }
 
@@ -180,30 +184,36 @@ main .EXPERIENCE-WITh {
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 60px;
 
 }
 
 main .EXPERIENCE-WITh span {
-    color: var(--Secondary-Text, #C5C5C5);
+    color: #318CE4;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 2.4px;
-    margin-bottom: 20px;
+    margin: var(--headingMargin);
 }
 
 main .EXPERIENCE-WITh .logos {
     display: inline-flex;
     height: 60px;
     align-items: center;
-    gap: 70px;
+    gap: 150px;
 
     justify-content: center;
 }
 
+main .EXPERIENCE-WITh .logos i {
+    font-size: 60px;
+    color: #c5c5c5;
+    padding: 20px;
+    border: none;
+
+}
 
 
 /* end .EXPERIENCE-WITh section */
@@ -227,28 +237,35 @@ main #projects h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 30px;
+    margin: var(--headingMargin);
+
 }
 
 main #projects .project-1 {
     display: flex;
     justify-content: center;
-
-
-
 }
 
-main #projects .project-1 .card-body {
-    background-color: #75b798;
+main #projects .card-body {
+    background-color: black;
+    color: white;
+}
+
+main #projects .card-body a {
+    background-color: #318CE4;
+    transition: all 1s ease-in-out;
+}
+
+main #projects .card-body a:hover {
+    color: #AF44DD;
 }
 
 /* end projects section */
 /* start .Experience section */
-main #Experience {
+main #Experience .all-Experince {
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    column-gap: 150px;
+
 }
 
 main #Experience h2 {
@@ -264,23 +281,21 @@ main #Experience h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 30px;
     text-align: center;
+    margin: var(--headingMargin);
 }
 
 main #Experience h3 {
     color: var(--Primary-Color, #FFF);
 
     font-family: Poppins;
-    font-size: 21.74px;
+    font-size: 25.74px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 20px 0px;
-    padding: 0px;
 
     text-align: left;
-    text-indent: 400px;
+    text-wrap: nowrap;
 }
 
 
@@ -290,21 +305,21 @@ main #Experience h3 {
 main #Experience ul {
     text-align: center;
     list-style: none;
-    width: 40%;
-    margin: 0 auto;
+    padding-left: 0px !important;
+
 }
 
 main #Experience ul li {
-    color: var(--Light-Grey, #8491A0);
+    color: white;
     font-family: Poppins;
-    font-size: 14.494px;
+    font-size: 20.494px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 40px;
     /* 21.74px */
     text-align: left;
 
-    padding-left: 20px;
+
 }
 
 
@@ -312,11 +327,6 @@ main #Experience ul li {
 /* end #Experience section */
 
 /* start skills section */
-main #skills {
-
-    text-align: center;
-    margin: 30px 0px;
-}
 
 main #skills h2 {
     color: #EB6840;
@@ -325,19 +335,32 @@ main #skills h2 {
     font-style: normal;
     font-weight: 800;
     line-height: 35.748px;
+    text-align: center;
+    margin: 10px;
 }
 
 main #skills ul {
-    width: 40%;
-    margin: 0px auto;
     list-style: none;
-    color: #84818A;
+    color: white;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--headingMargin);
+
 }
 
 main #skills ul li {
-    text-align: left;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ff6b35;
+    border-radius: 20px;
+    margin: 6px;
+    color: #fff;
+    font-size: 14px;
 
 }
+
 
 /* end skills section */
 /* start contact footer */
@@ -359,7 +382,7 @@ main #skills ul li {
     line-height: normal;
     letter-spacing: 0.471px;
     text-transform: uppercase;
-
+    margin-top: 20px;
 }
 
 #contact p {
@@ -391,6 +414,20 @@ main #skills ul li {
 
 }
 
+#contact .facebook,
+#contact .linkedin {
+    display: flex;
+    justify-content: center;
+    padding-left: 140px;
+    margin-top: 10px;
+}
+
+#contact .facebook p,
+#contact .linkedin p {
+    padding: 0px;
+    margin: 0px;
+}
+
 #contact .mail .fa-regular {
     color: white;
     font-size: 20px;
@@ -399,24 +436,15 @@ main #skills ul li {
     margin-top: 15px;
 }
 
-#contact .icons ul li a {
+#contact .facebook a,
+#contact .linkedin a {
     color: white;
     font-size: 20px;
     margin: 0 12px;
     cursor: pointer;
 }
 
-#contact .icons ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%;
-    margin: 10px auto;
-    row-gap: 10px;
-    padding-left: 75px;
-}
+
 
 
 /* end contact section */
